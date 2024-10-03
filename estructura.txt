@@ -1,0 +1,221 @@
+.
+├── actividades.txt
+├── app
+│   ├── Console
+│   │   └── Commands
+│   │       ├── AssignUserAgency.php
+│   │       └── AssignUserRole.php
+│   ├── Http
+│   │   ├── Controllers
+│   │   │   ├── Auth
+│   │   │   │   ├── ConfirmPasswordController.php
+│   │   │   │   ├── ForgotPasswordController.php
+│   │   │   │   ├── LoginController.php
+│   │   │   │   ├── RegisterController.php
+│   │   │   │   ├── ResetPasswordController.php
+│   │   │   │   └── VerificationController.php
+│   │   │   ├── Controller.php
+│   │   │   ├── HomeController.php
+│   │   │   ├── UserController.php
+│   │   │   └── Vehiculos
+│   │   │       ├── AsignacionController.php
+│   │   │       ├── CalendarioController.php
+│   │   │       ├── DataTablesController.php
+│   │   │       ├── MaterialController.php
+│   │   │       └── RegisterController.php
+│   │   └── Middleware
+│   │       ├── CheckAgencyAccess.php
+│   │       ├── CheckAgency.php
+│   │       ├── Middleware.php
+│   │       └── PermissionMiddleware.php
+│   ├── Models
+│   │   ├── Mantenimiento
+│   │   │   ├── Mantenimiento.php
+│   │   │   └── Material.php
+│   │   ├── Refrigeracion
+│   │   │   └── sistemarefrigeracion.php
+│   │   ├── User.php
+│   │   └── Vehiculo
+│   │       └── Vehiculo.php
+│   ├── Policies
+│   │   └── MantenimientoPolicy.php
+│   └── Providers
+│       └── AppServiceProvider.php
+├── artisan
+├── bootstrap
+│   ├── app.php
+│   ├── cache
+│   │   ├── packages.php
+│   │   └── services.php
+│   └── providers.php
+├── composer.json
+├── composer.lock
+├── config
+│   ├── adminlte.php
+│   ├── app.php
+│   ├── auth.php
+│   ├── backup.php
+│   ├── cache.php
+│   ├── database.php
+│   ├── filesystems.php
+│   ├── logging.php
+│   ├── mail.php
+│   ├── permission.php
+│   ├── queue.php
+│   ├── services.php
+│   └── session.php
+├── database
+│   ├── database.sqlite
+│   ├── factories
+│   │   └── UserFactory.php
+│   ├── migrations
+│   │   ├── 0001_01_01_000000_create_users_table.php
+│   │   ├── 0001_01_01_000001_create_cache_table.php
+│   │   ├── 0001_01_01_000002_create_jobs_table.php
+│   │   ├── 2024_07_29_221004_create_vehiculos_table.php
+│   │   ├── 2024_07_30_020900_create_sistemarefrigeracion_table.php
+│   │   ├── 2024_07_30_180818_add_userid_to_vehiculos_table.php
+│   │   ├── 2024_07_30_180951_add_userid_to_sistemarefrigeracion_table.php
+│   │   ├── 2024_08_06_013247_create_mantenimientos_table.php
+│   │   ├── 2024_08_11_145959_create_materiales_table.php
+│   │   ├── 2024_08_12_202841_create_material_mantenimiento_table.php
+│   │   ├── 2024_08_12_204738_add_foto_evidencia_to_mantenimientos_table.php
+│   │   ├── 2024_08_13_012126_add_observaciones_to_mantenimientos_table.php
+│   │   ├── 2024_08_13_190530_add_soft_deletes_to_vehiculos_table.php
+│   │   ├── 2024_08_17_115240_create_permission_tables.php
+│   │   ├── 2024_08_17_160926_add_estado_to_mantenimientos_table.php
+│   │   ├── 2024_08_19_205958_add_agencia_to_users_table.php
+│   │   ├── 2024_08_20_154606_create_vehiculo_tecnico_table.php
+│   │   ├── 2024_08_20_163554_create_vehiculo_tecnico_table.php
+│   │   ├── 2024_08_21_201153_add_agencia_to_users_table.php
+│   │   ├── 2024_08_25_102916_add_rechazo_razon_to_mantenimientos_table.php
+│   │   └── 2024_08_25_113210_change_estado_to_enum_in_mantenimientos_table.php
+│   └── seeders
+│       ├── DatabaseSeeder.php
+│       └── RoleSeeder.php
+├── docker-compose.yml
+├── estructura.txt
+├── package.json
+├── package-lock.json
+├── phpunit.xml
+├── README.md
+├── resources
+│   ├── css
+│   │   └── app.css
+│   ├── js
+│   │   ├── app.js
+│   │   └── bootstrap.js
+│   ├── sass
+│   │   ├── app.scss
+│   │   └── _variables.scss
+│   └── views
+│       ├── auth
+│       │   ├── login.blade.php
+│       │   ├── passwords
+│       │   │   ├── confirm.blade.php
+│       │   │   ├── email.blade.php
+│       │   │   └── reset.blade.php
+│       │   ├── register.blade.php
+│       │   └── verify.blade.php
+│       ├── calendario
+│       │   └── index.blade.php
+│       ├── home.blade.php
+│       ├── layouts
+│       │   └── app.blade.php
+│       ├── users
+│       │   ├── create.blade.php
+│       │   ├── edit.blade.php
+│       │   └── index.blade.php
+│       ├── vehiculo
+│       │   ├── agendamiento.blade.php
+│       │   ├── asignaciones.blade.php
+│       │   ├── asignados.blade.php
+│       │   ├── dataTables.blade.php
+│       │   ├── edit.blade.php
+│       │   └── register.blade.php
+│       └── welcome.blade.php
+├── routes
+│   ├── console.php
+│   └── web.php
+├── storage
+│   ├── app
+│   │   ├── backup-temp
+│   │   └── Laravel
+│   │       ├── 2024-08-25-11-43-59.zip
+│   │       └── 2024-09-01-12-31-53.zip
+│   ├── framework
+│   │   ├── cache
+│   │   │   └── data
+│   │   ├── sessions
+│   │   ├── testing
+│   │   └── views
+│   │       ├── 0015211d66c66755ddf0b80df3bb1dd4.php
+│   │       ├── 0502b0273c39d9aeedbb906dd4b02faa.php
+│   │       ├── 07ed10a3c0b628a74c27154a036bfeb3.php
+│   │       ├── 09ee47cb6b2ead6fe59c09eda6d900b2.php
+│   │       ├── 0d6b027cfb717d91315dc00171141742.php
+│   │       ├── 13908c918157ccfc7c05c05195757833.php
+│   │       ├── 275c7c02e2528e6029079c885e2d2418.php
+│   │       ├── 2b48f9e5576eb4bcd4faa265419211ee.php
+│   │       ├── 2e07df922d5e9c41a82129378b3a77e9.php
+│   │       ├── 368072756c233ac30f0cf310e266ea82.php
+│   │       ├── 3a6013b8a0ffe50611902d4ba5402829.php
+│   │       ├── 3a7e1a10c8ff18053a5409a266f79564.php
+│   │       ├── 3f6e5da3650d2bf94ea1b66cec1ed5cf.php
+│   │       ├── 419551074a50fbe34ef86a0e07ca7190.php
+│   │       ├── 41f25ebff72585d7ac3bd1f66d8e6fb6.php
+│   │       ├── 53c073b2103897b3420323acf3585c9d.php
+│   │       ├── 5c2001e939204ec0b7ec56c9a9f31d3d.php
+│   │       ├── 6541aa66564c74fd5dd8201194a7999b.php
+│   │       ├── 662a8c27f84d01de3dbca17ef6ab6b72.php
+│   │       ├── 6b8f29caa3c8eb5c70ba40c7983e13d8.php
+│   │       ├── 7867326b5e69a6a2fa67c98187e7a5fd.php
+│   │       ├── 7e33b743a27113c4160f4c552f8b4db1.php
+│   │       ├── 7e78bc8813067e82854773d2cd1d1891.php
+│   │       ├── 8b77322ea40de4645844c2e3622c3810.php
+│   │       ├── 8fb722cfc82c19da594bff5d2380e447.php
+│   │       ├── 915cf21e4768a0738c5cbdaf5c01450b.php
+│   │       ├── 931737c889bcb943f8fc79654d164835.php
+│   │       ├── a120438d505ca9da755be63e962e88d7.php
+│   │       ├── a13ea38b01359fee6634ef381e3c6271.php
+│   │       ├── a3557068ed5b47425d76d1f6f3777346.php
+│   │       ├── a409957c32073e5572a809a8a11b2836.php
+│   │       ├── a43b3ee4fcc0526421e3e6fda7c0aec9.php
+│   │       ├── a43dffac7f28722de66800e4b9a5f5b9.php
+│   │       ├── a6e017772dac798c684f8ca4ea6a433e.php
+│   │       ├── ac95352bcdc7cb6b645348f21d9bb43e.php
+│   │       ├── aeb08c2851bb31955785bb389aa171a3.php
+│   │       ├── aed9f1094f532903c02fd9ef6487ec30.php
+│   │       ├── b1e90499d740c6edc35a9bb1937266dc.php
+│   │       ├── b4c063cc48a48a52f1130580648a9e8d.php
+│   │       ├── b7bd358b9c5638256c64717af5cb08db.php
+│   │       ├── b85fa3c09900f0a9a13f58ce611ef197.php
+│   │       ├── bae129cef9e600352d1c88ca55b5c61c.php
+│   │       ├── bd4cb6303d05897988df80a7ca5eca2d.php
+│   │       ├── c7b8f9d7f6fe364a62898a2eab5f763f.php
+│   │       ├── ca066571b562c4143a0c9e23bd75b8d0.php
+│   │       ├── cdaa869dbe7773cf63deaf6a747c4c3b.php
+│   │       ├── d0d721aea0b23eda21a7014e1e80c363.php
+│   │       ├── d0e22f574789fc85fb13ba8ff5e41b1d.php
+│   │       ├── d1ccf77caa3fb5121ecf4101969931da.php
+│   │       ├── dd310000961f2d208873a737c27d849a.php
+│   │       ├── de8be37515e562b73c41c4c3b07d7042.php
+│   │       ├── df4f9215246d968dbbae1a83ceb39f66.php
+│   │       ├── e5b4369d62bad30db7ccf8b378a70551.php
+│   │       ├── e64a517f5d31316c10f1181e23841b1b.php
+│   │       ├── f35c1ee9486679cd0ff0ddd907b0d481.php
+│   │       ├── f97d5d38882287dc8ef19bf476c91921.php
+│   │       ├── fb0cce697953cc47b704d23a2bd6d3e6.php
+│   │       ├── fcc4b5769b08dda7065b4b8e6fa07b8e.php
+│   │       └── ff0287b16b1537d62a0074d5fbe09d11.php
+│   └── logs
+│       └── laravel.log
+├── tests
+│   ├── Feature
+│   │   └── ExampleTest.php
+│   ├── TestCase.php
+│   └── Unit
+│       └── ExampleTest.php
+└── vite.config.js
+
+48 directories, 171 files

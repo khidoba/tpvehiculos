@@ -1,0 +1,12 @@
+1. Programar mantenimientos.
+Inicio de mantenimiento.
+Fin de mantenimiento.
+3 - 4 imagene
+* repuestos
+* durante
+* equipo
+
+
+ En el role de tecnico que pueda consultar los vehiculos asignados.
+ Los administradores General solo pueden tener acceso a sus Agencias
+ Administrador por agencia.
